@@ -28,7 +28,7 @@ class Application
 
       if @@items.include?(search_term)
         @@cart << search_term
-        resp.write "addded #{search_term}"
+        resp.write "added #{search_term}"
       else
         resp.write "Couldn't find #{search_term}."
       end
